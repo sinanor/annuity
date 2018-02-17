@@ -18,7 +18,6 @@ public class PlanGeneratorTest {
         int duration = 24;
         List<Installment> installments = new PlanGenerator().generate(new Date(), 5000.0, 5.0, duration);
         assertEquals(duration, installments.size());
-        installments.stream().forEach(System.out::println);
     }
 
     @Test
